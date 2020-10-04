@@ -4,7 +4,7 @@
 -- the code in Listing 8-13 to calculate the percent change in the sum of each column over time. Watch out for negative 
 -- values!
 
-the number of internet-connected computers used by the public
+-- the number of internet-connected computers used by the public
 SELECT pls14.stabr,
        sum(pls14.gpterms) AS gpterms_2014,
        sum(pls09.gpterms) AS gpterms_2009,
@@ -16,7 +16,7 @@ WHERE pls14.gpterms >= 0 AND pls09.gpterms >= 0
 GROUP BY pls14.stabr
 ORDER BY pct_change DESC;
 
-uses of public internet computers per year
+-- uses of public internet computers per year
 SELECT pls14.stabr,
 	   sum(pls14.pitusr) AS pitusr_2014,
        sum(pls09.pitusr) AS pitusr_2009,
